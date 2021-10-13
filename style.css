@@ -1,0 +1,140 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.page {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 15px;
+}
+.page div {
+  max-height: 100px;
+}
+.menu {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.menu img {
+  float: left;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+.menu li {
+  float: right;
+}
+.menu li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background-color: #f5b919;
+  color: #ffffff;
+}
+.active {
+  color: #ffffff;
+  background-color: #ff7600;
+}
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator h2 {
+  padding: 0 2em;
+  color: grey;
+}
+
+.separator .line {
+  flex: 1;
+  height: 1px;
+  background-color: grey;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 35px;
+  margin: auto;
+  grid-gap: 15px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.posts div {
+  padding: 10px;
+  max-height: 200px;
+}
+
+.post img {
+  float: left;
+  padding-right: 25px;
+  width: 25%;
+  height: 180px;
+}
+.post h2,
+.post button {
+  display: inline-block;
+  margin-bottom: 35px;
+}
+.post button {
+  float: right;
+  padding: 10px;
+  width: 25%;
+  color: #ffffff;
+  background-color: #ff7600;
+  border: none;
+}
+.post button:hover {
+  background-color: #f5b919;
+  transform: scale(1.05, 1);
+}
+.postTitle span {
+  font-style: normal;
+  font-size: 15px;
+}
+
+.writer {
+  color: #ff7600;
+}
+
+#divider {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px dotted grey;
+  margin-top: 450px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 35px;
+  margin: auto;
+  grid-gap: 1em;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.location img,
+.location p {
+  display: inline-block;
+}
+
+.location a {
+  color: #ff7600;
+  vertical-align: 25%;
+}
+
+.location {
+  margin-left: 50%;
+}
